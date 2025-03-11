@@ -1,0 +1,113 @@
+{
+  "id": "General℡",
+  "name": "General℡ 脚本订阅",
+  "author": "@General74110",
+  "icon": "https://raw.githubusercontent.com/General74110/Scripts/master/img/profile.png",
+  "repo": "https://github.com/General74110/Scripts",
+  "apps": [
+    {
+      "id": "KuwoMusic",
+      "name": "酷我音乐（时长+积分）",
+      "keys": ["Clear", "Kuwo_cookies"],
+      "desc": "支持多账号，请用 & 或 , 分隔多个 UID 和 SID 组",
+      "settings": [
+        {
+          "id": "Clear",
+          "name": "清除Cookies",
+          "val": "0",
+          "type": "number",
+          "placeholder": "0为关闭,1为开启",
+          "desc": "清除酷我音乐Cookies（时长+积分）"
+        },
+        {
+          "id": "Kuwo_cookies",
+          "name": "登录 UID (时长) / UID@SID (积分)",
+          "val": "",
+          "type": "text",
+          "placeholder": "loginUid 或 loginUid@loginSid（多个用 & 或 , 分隔）",
+          "desc": "时长模式: 仅填 loginUid\n积分模式: 填 loginUid@loginSid\n多个账户请用 & 分隔"
+        }
+      ],
+      "scripts": [
+        {
+          "name": "酷我音乐（时长）",
+          "script": "https://raw.githubusercontent.com/General74110/Scripts/master/Quantumult%20X/Script/Task/Kuwomusic.js"
+        },
+        {
+          "name": "酷我音乐（积分）",
+          "script": "https://raw.githubusercontent.com/General74110/Scripts/master/Quantumult%20X/Script/Task/kuwo.js"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/General74110/Scripts/master/img/kuwo.png",
+        "https://raw.githubusercontent.com/General74110/Scripts/master/img/kuwo.png"
+      ]
+    },
+    {
+      "id": "QQreader",
+      "name": "QQ阅读",
+      "keys": ["ywguid", "ywkey", "ywtoken", "csigs"],
+      "desc": "自动完成QQ阅读任务",
+      "settings": [
+        {
+          "id": "ywguid",
+          "name": "ywguid",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "ywkey",
+          "name": "ywkey",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "ywtoken",
+          "name": "ywtoken",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "csigs",
+          "name": "csigs",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        }
+      ],
+      "script": "https://raw.githubusercontent.com/General74110/Scripts/master/Quantumult%20X/Script/Task/QQreader.js",
+      "icons": [
+        "https://raw.githubusercontent.com/General74110/Scripts/master/img/qqreader.png",
+        "https://raw.githubusercontent.com/General74110/Scripts/master/img/qqreader.png"
+      ]
+    },
+    {
+      "id": "xmly",
+      "name": "喜马拉雅",
+      "keys": ["xmlytoken"],
+      "desc": "喜马拉雅签到任务",
+      "settings": [
+        {
+          "id": "xmlytoken",
+          "name": "喜马拉雅Token",
+          "val": "",
+          "type": "text",
+          "placeholder": "输入多个账号Token，用#隔开",
+          "desc": "抓取的1&_token，多个Token用#隔开"
+        }
+      ],
+      "script": "https://raw.githubusercontent.com/General74110/Scripts/master/Quantumult%20X/Script/Task/xmly.js",
+      "icons": [
+        "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Himalaya.png",
+        "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Himalaya.png"
+      ]
+    }
+  ]
+}
