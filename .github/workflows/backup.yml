@@ -233,5 +233,5 @@ jobs:
           else
             git commit -m "Automated backup $(date +'%Y-%m-%d %H:%M:%S')"
           fi
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/wangyuyan666/QuanxBackup.git
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/smjcxf/QuanxBackup.git
           git push origin main
