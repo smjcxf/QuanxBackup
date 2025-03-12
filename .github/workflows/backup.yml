@@ -15,8 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-       - name: Clone KOP-XIAO_QuantumultX
-         run: |
+      - name: Clone KOP-XIAO_QuantumultX
           git clone --depth=1 https://github.com/KOP-XIAO/QuantumultX KOP-XIAO_QuantumultX
           rm -rf "QuantumultX(KOP-XIAO)"
           mkdir -p "QuantumultX(KOP-XIAO)"
