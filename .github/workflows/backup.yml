@@ -14,7 +14,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-
+          
+      - name: Clone KOP-XIAO_QuantumultX
+        run: |
+          git clone --depth=1 https://github.com/KOP-XIAO/QuantumultX KOP-XIAO_QuantumultX
+          rm -rf "QuantumultX(KOP-XIAO)"
+          mkdir -p "QuantumultX(KOP-XIAO)"
+          mv KOP-XIAO_QuantumultX/* "QuantumultX(KOP-XIAO)/"
+          rm -rf KOP-XIAO_QuantumultX
+          
       - name: Clone xiaomaoJT_QxScript
         run: |
           git clone --depth=1 https://github.com/xiaomaoJT/QxScript xiaomaoJT_QxScript
